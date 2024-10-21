@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Greycliff:wght@400&display=swap')
+
+// Apply the Greycliff font to the entire application
+body
+  font-family: 'Greycliff', sans-serif
+  font-weight: bold
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: rgb(13, 107, 13) // Navbar background color
+  padding: 10px 20px // Adjust padding as needed
+  height: 40px
+
+.logo
+    display: flex
+    align-items: center
+    color: white
+    font-size: 30px
+    gap: 10px 
+    margin-left: 110px
+
+.logooo
+    position: absolute
+    top: 20px
+    left: 55px
+    z-index: 2
+    height: 85px
+    width: 85px
+    margin-left: -15px
+
+.nav-links
+    display: flex
+    gap:15px
+
+a
+  color: white // Link text color
+  text-decoration: none // Remove underline from links
+  font-size: 16px // Link text size
+  margin-right: 25px
+
+a:hover
+        color: rgb(250,218,94) // Underline on hover
+
+
+.search-container
+    margin: 20px
+    text-align: center
+
+.search-input
+    flex-grow: 1 // Allow the input to take available space
+    padding: 10px // Add some padding for better UX
+    border: 1px solid #ccc // Border styling
+    border-radius: 4px
+
+.title
+    text-align: center
+    margin: 20px
+
+.recipes-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    
+
+.recipe-card
+    border: 1px solid #00FF00
+    border-radius: 8px
+    padding: 20px
+    margin: 10px
+    text-align: center
+    width: 200px
+
+.recipe-image
+    width: 100%
+    height: auto
+    border-radius: 8px
+.add-recipe-button
+    background-color: #4CAF50 // Green background
+    color: white
+    border: none
+    border-radius: 5px
+    padding: 10px 15px
+    cursor: pointer
+    margin-left: 10px 
+    font-size: 1rem
+    transition: background-color 0.3s
+    
+
+.add-recipe-button:hover
+    background-color: #45a049 // Darker green on hover
+
+.recipe-detail-popup
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.8) // Semi-transparent background
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1000 // Ensure it appears above other content
+    padding: 20px
+
+.popup-content
+  background: linear-gradient(to bottom, #b2ffb2, #80e0a6)
+  border-radius: 8px
+  max-width: 600px // Optional: limit width
+  width: 100% // Take full width
+  height: 100% // Take full height
+  overflow-y: auto // Allow scrolling if content is too large
+  padding: 20px
+  position: relative
+
+.close
+  position: absolute
+  top: 10px
+  right: 10px
+  cursor: pointer
+  font-size: 24px
+  color: black
